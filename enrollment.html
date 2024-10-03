@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lock-in</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+
+</head>
+<body class="bg-[#134478] text-[#e9eff1] px-[5vw] py-[5vh]">
+<div class="main flex w-full gap-[2vw] ">
+    <div class="w-[20vw] border border-[3px] border-[#eebe2d] h-full p-2 px-5 min-h-[100vh] relative">
+        <a href="index.html"><h1 class="text-center text-[1.9rem] font-bold font-[Oswald]">DASHBOARD</h1></a> 
+        <a href="enrollment.html"><h3 class="text-[1.5rem] font-[Nunito] mt-5">Add Student</h3></a>
+        <a href="student-table.html"><h3 class="text-[1.5rem] font-[Nunito] mt-5">Student</h3></a>
+        <a href="login.html"><h3 class="text-[1.5rem] font-[Nunito] mt-5 absolute bottom-20 left-5">Log-Out</h3></a>
+
+    </div>
+    <div class="w-full border border-[3px] border-[#eebe2d] min-h-[100vh] py-2 px-5 ">
+        <h1 class="text-center text-[1.9rem] font-bold font-[Oswald]">ENROLLMENT FORM</h1></a> 
+    <form class="font-[Nunito] text-[1.5rem] mt-5" id="formi">
+    <div class="basic-info">
+        <label class="text-[#e9eff1] text-[1.7rem] " for="name">Full Name:  <input class="text p-1 text-[1.2rem] text-black w-full my-[2vh]" required  type="text" id="name" placeholder="Juan Dela Cruz"></label>
+        <label class="text-[#e9eff1] text-[1.7rem] " for="course">Course:  <input class="text p-1 text-[1.2rem] text-black w-full my-[2vh]"  required type="text" id="course" placeholder="Software Development Training Program"></label>
+        <label class="text-[#e9eff1] text-[1.7rem] " for="bday">Date of birth:  <input class="text p-1 text-[1.2rem] text-black w-full my-[2vh]" required type="date" id="bday" placeholder="Software Development Training Program"></label>
+        <label class="text-[#e9eff1] text-[1.7rem] " for="email">Email Address:  <input class="text p-1 text-[1.2rem] text-black w-full my-[2vh]"  required type="email" id="email" placeholder="JuanDelaCruz@gmail.com"></label>
+        <label class="text-[#e9eff1] text-[1.7rem] " for="address">Address:  <input class="text p-1 text-[1.2rem] text-black w-full my-[2vh]"  required type="text" id="address" placeholder="Street name,Barangay,City,Province"></label>
+      <div class="flex w-full justify-evenly items-center mt-[3vh]">
+        <label class="text-[#e9eff1] text-[1.7rem] " for="contact">Contact Number :  <input class="text p-1 text-[1.2rem] text-black w-[15vw] my-[2vh]" type="number" id="contact" placeholder="1234567890"></label>
+       <div><label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label></div>  </div> 
+    </div>
+    <div class="flex w-full justify-center">
+    <button type="Submit" id="submitForm" class="w-[15vw] items-center border border-5 border-[#eebe2d] mt-[5vh] shadow-xl py-3 px-4 tracking-wide rounded-lg text-white bg-blue-600 hover:bg-blue-700 focus:outline-none" id="login">
+        Submit
+      </button></div>
+    </form>
+    </div>
+</div>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="enrollment.js" defer></script>
+</body>
+</html>
